@@ -1,0 +1,26 @@
+{
+  "name": "DataCompression",
+  "version": "3.6.0",
+  "summary": "Swift libcompression wrapper as an extension for the Data type (GZIP, ZLIB, LZFSE, LZMA, LZ4, deflate, RFC-1950, RFC-1951, RFC-1952)",
+  "authors": {
+    "Markus Wanke": "mw99@users.noreply.github.com"
+  },
+  "homepage": "https://github.com/mw99/DataCompression",
+  "license": {
+    "type": "Apache 2.0",
+    "file": "LICENSE"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/DataCompression/3.6.0/zip",
+    "type": "zip"
+  },
+  "swift_versions": "5",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "Sources/DataCompression/*.swift",
+  "requires_arc": true,
+  "vendored_frameworks": "DataCompression.framework",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」",
+  "swift_version": "5"
+}

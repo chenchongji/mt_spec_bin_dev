@@ -1,0 +1,28 @@
+{
+  "name": "nanopb",
+  "version": "2.30908.0",
+  "summary": "Protocol buffers with small code size.",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n          Nanopb is a small code-size Protocol Buffers implementation\nin ansi C. It is especially suitable for use in\nmicrocontrollers, but fits any memory restricted system.",
+  "homepage": "https://github.com/nanopb/nanopb",
+  "license": {
+    "type": "zlib",
+    "file": "LICENSE.txt"
+  },
+  "authors": {
+    "Petteri Aimonen": "jpa@nanopb.mail.kapsi.fi"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/nanopb/2.30908.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": false,
+  "xcconfig": {
+    "GCC_PREPROCESSOR_DEFINITIONS": "$(inherited) PB_FIELD_32BIT=1 PB_NO_PACKED_STRUCTS=1 PB_ENABLE_MALLOC=1"
+  },
+  "source_files": "bin_nanopb_2.30908.0/Headers/*",
+  "public_header_files": "bin_nanopb_2.30908.0/Headers/*.h",
+  "vendored_libraries": "bin_nanopb_2.30908.0/*.a"
+}

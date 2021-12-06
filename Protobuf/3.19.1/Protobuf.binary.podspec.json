@@ -1,0 +1,29 @@
+{
+  "name": "Protobuf",
+  "version": "3.19.1",
+  "summary": "Protocol Buffers v.3 runtime library for Objective-C.",
+  "homepage": "https://github.com/protocolbuffers/protobuf",
+  "license": "3-Clause BSD License",
+  "authors": {
+    "The Protocol Buffers contributors": "protobuf@googlegroups.com"
+  },
+  "cocoapods_version": ">= 1.0",
+  "source": {
+    "http": "http://localhost:8080/frameworks/Protobuf/3.19.1/zip",
+    "type": "zip"
+  },
+  "source_files": "bin_Protobuf_3.19.1/Headers/*",
+  "user_target_xcconfig": {
+    "GCC_PREPROCESSOR_DEFINITIONS": "$(inherited) GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1"
+  },
+  "pod_target_xcconfig": {
+    "GCC_PREPROCESSOR_DEFINITIONS": "$(inherited) GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": false,
+  "public_header_files": "bin_Protobuf_3.19.1/Headers/*.h",
+  "vendored_libraries": "bin_Protobuf_3.19.1/*.a",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」"
+}

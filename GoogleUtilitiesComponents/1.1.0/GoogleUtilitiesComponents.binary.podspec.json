@@ -1,0 +1,48 @@
+{
+  "name": "GoogleUtilitiesComponents",
+  "version": "1.1.0",
+  "summary": "Google Utilities Component Container for Apple platforms.",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n          An internal Google utility that is a dependency injection system for libraries to depend on other\nlibraries in a type safe and potentially weak manner.\nNot intended for direct public usage.",
+  "homepage": "https://developers.google.com/",
+  "license": {
+    "type": "Apache",
+    "file": "LICENSE"
+  },
+  "authors": "Google, Inc.",
+  "source": {
+    "http": "http://localhost:8080/frameworks/GoogleUtilitiesComponents/1.1.0/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "cocoapods_version": ">= 1.4.0",
+  "prefix_header_file": false,
+  "static_framework": true,
+  "source_files": "bin_GoogleUtilitiesComponents_1.1.0/Headers/*",
+  "public_header_files": "bin_GoogleUtilitiesComponents_1.1.0/Headers/*.h",
+  "private_header_files": "GoogleUtilitiesComponents/Sources/Private/*.h",
+  "dependencies": {
+    "GoogleUtilities/Logger": [
+
+    ]
+  },
+  "vendored_libraries": "bin_GoogleUtilitiesComponents_1.1.0/*.a",
+  "testspecs": [
+    {
+      "name": "unit",
+      "test_type": "unit",
+      "scheme": {
+        "code_coverage": true
+      },
+      "source_files": "GoogleUtilitiesComponents/Tests/**/*.[mh]",
+      "requires_arc": "GoogleUtilitiesComponents/Tests/*/*.[mh]",
+      "requires_app_host": true,
+      "dependencies": {
+        "OCMock": [
+
+        ]
+      }
+    }
+  ]
+}

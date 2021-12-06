@@ -1,0 +1,92 @@
+{
+  "name": "FirebaseInstallations",
+  "version": "8.10.0",
+  "summary": "Firebase Installations",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n Firebase Installations.",
+  "homepage": "https://firebase.google.com",
+  "license": {
+    "type": "Apache",
+    "file": "LICENSE"
+  },
+  "authors": "Google, Inc.",
+  "source": {
+    "http": "http://localhost:8080/frameworks/FirebaseInstallations/8.10.0/zip",
+    "type": "zip"
+  },
+  "social_media_url": "https://twitter.com/Firebase",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "cocoapods_version": ">= 1.4.0",
+  "prefix_header_file": false,
+  "source_files": "bin_FirebaseInstallations_8.10.0/Headers/*",
+  "public_header_files": "bin_FirebaseInstallations_8.10.0/Headers/*.h",
+  "frameworks": "Security",
+  "dependencies": {
+    "FirebaseCore": [
+      "~> 8.0"
+    ],
+    "PromisesObjC": [
+      ">= 1.2",
+      "< 3.0"
+    ],
+    "GoogleUtilities/Environment": [
+      "~> 7.6"
+    ],
+    "GoogleUtilities/UserDefaults": [
+      "~> 7.6"
+    ]
+  },
+  "pod_target_xcconfig": {
+    "GCC_C_LANGUAGE_STANDARD": "c99",
+    "GCC_PREPROCESSOR_DEFINITIONS": "",
+    "HEADER_SEARCH_PATHS": "\"${PODS_TARGET_SRCROOT}\""
+  },
+  "vendored_libraries": "bin_FirebaseInstallations_8.10.0/*.a",
+  "testspecs": [
+    {
+      "name": "unit",
+      "test_type": "unit",
+      "scheme": {
+        "code_coverage": true
+      },
+      "platforms": {
+        "ios": "9.0",
+        "osx": "10.12",
+        "tvos": "10.0"
+      },
+      "source_files": [
+        "FirebaseInstallations/Source/Tests/Unit/*.[mh]",
+        "FirebaseInstallations/Source/Tests/Utils/*.[mh]",
+        "FirebaseInstallations/Source/Tests/Unit/Swift/*"
+      ],
+      "resources": "FirebaseInstallations/Source/Tests/Fixture/**/*",
+      "requires_app_host": true,
+      "dependencies": {
+        "OCMock": [
+
+        ]
+      }
+    },
+    {
+      "name": "integration",
+      "test_type": "unit",
+      "scheme": {
+        "code_coverage": true
+      },
+      "platforms": {
+        "ios": "9.0",
+        "osx": "10.12",
+        "tvos": "10.0"
+      },
+      "source_files": "FirebaseInstallations/Source/Tests/Integration/**/*.[mh]",
+      "resources": "FirebaseInstallations/Source/Tests/Resources/**/*",
+      "requires_app_host": true,
+      "dependencies": {
+        "OCMock": [
+
+        ]
+      }
+    }
+  ]
+}

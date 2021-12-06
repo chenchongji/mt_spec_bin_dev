@@ -1,0 +1,57 @@
+{
+  "name": "PromisesObjC",
+  "version": "2.0.0",
+  "authors": "Google Inc.",
+  "license": {
+    "type": "Apache",
+    "file": "LICENSE"
+  },
+  "homepage": "https://github.com/google/promises",
+  "source": {
+    "http": "http://localhost:8080/frameworks/PromisesObjC/2.0.0/zip",
+    "type": "zip"
+  },
+  "summary": "Synchronization construct for Objective-C",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」\n          Promises is a modern framework that provides a synchronization construct for\nObjective-C to facilitate writing asynchronous code.",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "module_name": "FBLPromises",
+  "prefix_header_file": false,
+  "header_mappings_dir": "Sources/FBLPromises/include/",
+  "public_header_files": "bin_PromisesObjC_2.0.0/Headers/*.h",
+  "private_header_files": "Sources/FBLPromises/include/FBLPromisePrivate.h",
+  "source_files": "bin_PromisesObjC_2.0.0/Headers/*",
+  "xcconfig": {
+    "HEADER_SEARCH_PATHS": "\"${PODS_TARGET_SRCROOT}/Sources/FBLPromises/include\""
+  },
+  "vendored_libraries": "bin_PromisesObjC_2.0.0/*.a",
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit",
+      "platforms": {
+        "ios": "9.0",
+        "osx": "10.10",
+        "tvos": "9.0"
+      },
+      "source_files": [
+        "Tests/FBLPromisesTests/*.m",
+        "Sources/FBLPromisesTestHelpers/include/FBLPromisesTestHelpers.h"
+      ]
+    },
+    {
+      "name": "PerformanceTests",
+      "test_type": "unit",
+      "platforms": {
+        "ios": "9.0",
+        "osx": "10.10",
+        "tvos": "9.0"
+      },
+      "source_files": [
+        "Tests/FBLPromisesPerformanceTests/*.m",
+        "Sources/FBLPromisesTestHelpers/include/FBLPromisesTestHelpers.h"
+      ]
+    }
+  ]
+}
